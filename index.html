@@ -1,25 +1,42 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazingglazing</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Background Color Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            transition: background-color 0.5s ease;
+        }
 
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <h1>AMAZING GLAZING PRIME SERVICES</h1>
-    <p>CAKES AND MORE</p>
-    <h2>Our Services:</h2>
-    <ul>
-        <li>All kind of cakes </li>
-        <li>Turkish Cardamom Tea.</li>
-        <li>Style the page using CSS (like changing colors and fonts).</li>
-    </ul>
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
-    
+    <button onclick="changeBackgroundColor()">Change Background Color to Blue</button>
+
     <script src="script.js"></script>
 </body>
 </html>
